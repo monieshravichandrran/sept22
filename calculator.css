@@ -1,0 +1,39 @@
+#container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    background-color: grey;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#outer_container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > button {
+    font-size: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.outer_rect {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.inner_rect {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    position: absolute;
+    top: 125px;
+    left: 500px;
+}

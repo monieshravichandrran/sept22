@@ -1,0 +1,137 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+.coding {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.coding {
+    background-color: aqua;
+}
+
+div {
+    color: green !important;
+}
+
+div {
+    color: blue;
+}
+
+#link {
+    color:blueviolet;
+}
+
+.btn {
+    padding: 15px 13px 15px 13px;
+    border-radius: 10px;
+    color: white;
+    border: 5px solid brown !important;
+}
+
+#submit {
+    background-color: green;
+}
+
+#delete {
+    background-color: red;
+}
+
+#reset {
+    background-color: blue;
+}
+
+.submit_btn {
+    border: 5px solid black;
+}
+
+.container > .subitem {
+    background-color: blueviolet;
+}
+
+.container > .subcontainer > .subitem {
+    background-color: cadetblue;
+}
+
+table, tr, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.centered_div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 100px;
+}
+
+.centered_div > h2 {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.para_container {
+    display: inline;
+}
+
+.para_container > p {
+    display: inline-block;
+}
+
+fieldset {
+    padding: 50px;
+}
+
+label, input {
+    margin-top: 30px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    margin-left: 30px;
+    font-size: large;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+
+.forgot_pswd {
+    color: blue;
+    cursor: pointer;
+}
+
+.forgot_pswd:hover {
+    font-size: large;
+}
+
+@keyframes animation1 {
+    0% { background-color: red;}
+    25% {background-color: blue;}
+    50% {background-color: magenta;}
+    75% {background-color: aqua;}
+    100% { background-color: green;}
+}
+
+.rectangle {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    margin-top: 20px;
+    animation: animation1 8s;
+}
+

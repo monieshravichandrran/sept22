@@ -1,0 +1,165 @@
+* {
+    padding: auto;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    
+    nav {
+        position: sticky;
+        top : 0px;
+    }
+    
+    nav > ul {
+        display: inline-block;
+        background-color: grey;
+        width: 100vw;
+    }
+    
+    nav > ul > li {
+        display: inline-block;
+        padding: 25px;
+        color: white;
+        font-size: 18px;
+    }
+    
+    nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    nav > ul > li:hover {
+        font-weight: 900;
+        font-size: 20px;
+        background-color: black;
+    }
+    
+    .active {
+        font-weight: 900;
+        font-size: 20px;
+        background-color: black;
+    }
+    
+    .name {
+        margin: 25px 25px 0px 25px;
+        font-style: italic;
+    }
+    
+    .caption {
+        margin-left: 25px;
+        margin-top: 2px;
+    }
+    
+    .sub_heading {
+        margin: 50px 0px 0px 25px;
+        font-style: italic;
+    }
+    
+    .paras {
+        margin: 10px 25px 0px 25px;
+    }
+    
+    .image {
+        margin: 30px 20px 0px 25px;
+        float: left;
+    }
+    
+    .para_image {
+        margin: 50px 20px 0px 0px;
+    }
+    
+    .image_container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 25px 0px 25px 0px;
+    }
+    
+    table,tr,th,td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile_view {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .image_wrapper {
+        display : flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .image {
+        width: 75vw;
+        height: 55vw;
+    }
+
+    .desktop_view {
+        display : none;
+    }
+
+    .desktop_nav {
+        display: none;
+    }
+
+    .menu {
+        margin: 10px;
+    }
+
+    .active {
+        font-weight: 900;
+        font-size: 20px;
+        background-color: black;
+    }
+    
+    .name {
+        margin: 25px 25px 0px 25px;
+        font-style: italic;
+        font-size: larger;
+    }
+    
+    .caption {
+        margin-left: 25px;
+        margin-top: 2px;
+    }
+    
+    .sub_heading {
+        margin: 50px 0px 0px 25px;
+        font-style: italic;
+        font-size: large;
+    }
+    
+    .paras {
+        margin: 10px 25px 0px 25px;
+        font-size: smaller;
+    }
+    
+    
+    .para_image {
+        margin: 50px 20px 10px 20px;
+        font-size: smaller;
+    }
+    
+    table,tr,th,td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
