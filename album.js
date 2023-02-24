@@ -15,7 +15,7 @@ setInterval(()=>{
         currentImage = 0;
     }
     image.setAttribute("src",images[currentImage]);
-},500);
+},2000);
 
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
