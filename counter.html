@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1>Alarm</h1>
+    <label>Alarm Time</label>
+    <input type="text" id="counterValue">
+    <button onclick="setAlarm();">Set Alarm</button>
+    <div style="margin-top: 100px; display: flex; justify-content: center; align-items: center;">
+        <h1 id="time" style="font-size: 25px;"></h1>
+    </div>
+    <div id="alarms"></div>
+    <script>
+        let alarms = [];
+        setInterval(()=>{
+            const currentDate = new Date();
+            const currentTime = String(currentDate.getHours()) + ":" + String(currentDate.getMinutes()) + ":" + String(currentDate.getSeconds());
+            const result = alarms.filter((item) => item == currentTime);
+            document.getElementById("time").innerText = currentTime;
+            if(result.length>0){
+                alert("Alarm is ringing");
+            }
+        },1000);
+
+        function deleteAlarm(event){
+            console.log(event.target);
+            let btnid = event.target.id;
+            let alarmId = btnid.slice(3);
+            document.getElementById(alarmId).remove();
+        }
+
+        function setAlarm() {
+            const newAlarm = document.createElement('div');
+            newAlarm.innerText = document.getElementById("counterValue").value;
+            newAlarm.setAttribute("id",document.getElementById("counterValue").value);
+            const newButton = document.createElement("button");
+            newButton.innerText = "Delete";
+            newButton.setAttribute("id","btn"+document.getElementById("counterValue").value);
+            newButton.setAttribute("onclick", "deleteAlarm(event);")
+            alarms.push(document.getElementById("counterValue").value);
+            newAlarm.appendChild(newButton);
+            document.getElementById("alarms").appendChild(newAlarm);
+        }
+    </script>
+</body>
+
+</html>
